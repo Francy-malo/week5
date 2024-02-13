@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+:root {
+  --primary-color: #140b5c;
+  --secondary-color: #d1c1bb;
+  --text-color: #000000;
+  --heading-text-color: #140b5c;
+  --accent1-color: #d36836;
+  --accent2-color: #fbf4f4;
+
+  --heading-font: Barlow;
+  --paragraph-font: "Patua One", Helvetica, sans-serif;
+
+  --nav-link-color: #d36836;
+  --nav-background-color: #fbf4f4;
+  --nav-hover-link-color: #fbf4f4;
+  --nav-hover-background-color: #d36836;
+}
+
+body {
+  font-family: "Patua One", Helvetica, sans-serif;
+  color: var(--text-color);
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+a.social-link {
+  text-decoration: none;
+}
+nav {
+  margin-bottom: 10px;
+}
+nav a {
+  padding: 0 20px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  text-align: right;
+  margin: 0 40px 0 auto;
+  padding: 10px;
+}
+.logo {
+  width: 80px;
+  height: auto;
+}
+.navigation {
+  display: flex;
+  list-style: none;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  position: absolute;
+  bottom: 15px;
+  width: -webkit-fill-available;
+}
+.sociallinks {
+  display: flex;
+  gap: 5px;
+}
+/* Contact page */
+#form-message-success {
+  display: none;
+}
+.form-and-map {
+  display: flex;
+  background: #e8edf0;
+  padding: 20px 10px;
+  min-height: 500px;
+  margin-top: 20px;
+}
+.form {
+  margin: 5px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.map {
+  width: 40%;
+  background: #000000;
+}
+form {
+  display: block;
+  margin-top: 0em;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+iframe {
+  border: 0;
+}
+.col-md-6,
+.col-md-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-md-6 {
+  width: 50%;
+  max-width: 50%;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.row:not(:first-child) {
+  margin-top: 15px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.radio {
+  width: 100%;
+}
+.label {
+  display: inline-block;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.small-input,
+.radio-group {
+  min-height: 44px;
+  padding: 10px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  border-radius: 2px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none;
+}
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 10px;
+}
+.col-md-12.checkbox {
+  margin-top: 25px;
+}
+.contact-us-title {
+  display: inline-flex;
+  margin: 0 auto;
+}
+.checkbox-label {
+  margin-bottom: 5px;
+  display: contents;
+  margin: 0 auto;
+}
+input[type="submit"] {
+  margin-top: 25px;
+  /* background-color: #4caf50; */
+  background-color: var(--accent1-color);
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+input[type="submit"]:hover {
+  background-color: #4caf50;
+  translate: 1px;
+}
+.contact-row,
+.employee-profiles {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 35px;
+  /* flex-wrap: wrap; Allow multiple rows on smaller screens */
+}
+.dbox,
+.employee-profile {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 0 10px;
+  display: inline-table;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adress {
+  color: var(--accent1-color);
+  font-size: 13px;
+}
+
+.small-icon {
+  color: white;
+  margin: 10px;
+}
+.dbox .icon,
+.employee-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #2553b8;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.employee-profile {
+  flex: 0 0 calc(30% - 10px);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.employee-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.employee-caption {
+  text-align: center;
+  margin-top: 10px;
+}
